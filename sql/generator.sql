@@ -10,3 +10,13 @@ CREATE TABLE estats(
   ,date                 datetime  NOT NULL
   ,PRIMARY KEY(region,date)
 );
+CREATE TABLE voraussagen(
+   region               VARCHAR(20) NOT NULL
+  ,vorverbrauch         decimal(20,4) NOT NULL
+  ,vorpreis             BIGINT NOT NULL
+  ,voremission          decimal(20,4) NOT NULL
+  ,vorimport            decimal(20,4) NOT NULL
+  ,vorexport            decimal(20,4) NOT NULL
+  ,hour					INT NOT NULL
+  ,PRIMARY KEY(hour)
+);
